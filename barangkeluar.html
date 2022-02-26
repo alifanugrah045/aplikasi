@@ -105,13 +105,12 @@
                       <!-- modal -->
                       <!-- Button trigger modal -->
                       <div class="input-group mb-3">
-                        <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</button>
-                        <button class="btn btn-success rounded border-0 ms-2">
-                          <i class="bi bi-printer me-2">
-                          </i>Cetak Data</button>
+                        <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal1">Tambah Data</button>
+                        <button type="button" class="btn btn-success rounded ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal2"> <i class="bi bi-printer me-2">
+                        </i>Cetak Data</button>
                       </div>
                       <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header bg-primary">
@@ -145,6 +144,37 @@
                         </div>
                       </div>
                       <!-- end modal -->
+                      <!-- modal cetak data -->
+                        <!-- Modal -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header bg-success">
+                              <h5 class="modal-title text-white" id="exampleModalLabel">Tambah Data</h5>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">From</label>
+                                  <input type="date" class="form-control" id="recipient-name" />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">To</label>
+                                  <input type="date" class="form-control" id="recipient-name" />
+                                </div>
+                                
+                                <button type="button" class="btn btn-success">Cetak Data</button>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Cetak Semua Data</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end modal -->
+                      <!-- akhir modal cetak data -->
                     </div>
                     <div class="col-md-6 d-flex ">
                       <!-- date -->
@@ -205,10 +235,8 @@
                         <td>Unit Mandonga</td>
                         <td>5</td>
                         <td>1000000</td>
-                        <td><div class="d-flex flex-row gap-2 justify-content-center">
-                          <a href="#" class="link-primary"><i class="bi bi-pencil-square"></i></a>
-                          <a href="#" class="link-danger"> <i class="bi bi-trash-fill"></i></a>
-                        </div></td>
+                        <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square"></i></a></button>
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"> <i class="bi bi-trash-fill"></i></a></button></td>
                       </tr>
                       <tr>
                         <td scope="row">2</td>
@@ -217,10 +245,8 @@
                         <td>Unit Mandonga</td>
                         <td>5</td>
                         <td>1000000</td>
-                        <td><div class="d-flex flex-row gap-2 justify-content-center">
-                          <a href="#" class="link-primary"><i class="bi bi-pencil-square"></i></a>
-                          <a href="#" class="link-danger"> <i class="bi bi-trash-fill"></i></a>
-                        </div></td>
+                        <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square"></i></a></button>
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"> <i class="bi bi-trash-fill"></i></a></button></td>
                       </tr>
                       <tr>
                         <td scope="row">3</td>
@@ -229,10 +255,8 @@
                         <td>Unit Andounohu</td>
                         <td>5</td>
                         <td>1000000</td>
-                        <td><div class="d-flex flex-row gap-2 justify-content-center">
-                          <a href="#" class="link-primary"><i class="bi bi-pencil-square"></i></a>
-                          <a href="#" class="link-danger"> <i class="bi bi-trash-fill"></i></a>
-                        </div></td>
+                         <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square"></i></a></button>
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"> <i class="bi bi-trash-fill"></i></a></button></td>
                       </tr>
                     </tbody>
                   </table>
