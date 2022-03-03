@@ -137,69 +137,76 @@
 
 
                             <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Pegwai</label>
-                                <select class="form-control" name="id_pegwai">
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                </select>
-                                </div>
+                              <label for="message-text" class="col-form-label">Nama Pegwai</label>
+                              <select class="form-control" name="id_pegwai">
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                              </select>
+                            </div>
 
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Unit Ker</label>
-                                <select class="form-control" name="id_pegwai">
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                </select>
-                                </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Nama Unit Ker</label>
+                              <select class="form-control" name="id_pegwai">
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                              </select>
+                            </div>
 
                             <div class="row">
-                              <div class="col-md-5">
+                              <div class="col-md-12">
 
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Barang</label>
-                                  <select class="form-control" name="id_pegwai">
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                </select>
+                                <label for="message-text" class="col-form-label">Nama Barang</label>
+                                <div class="form-group fieldGroup mb-3">
+                                  <div class="input-group">
+                                    <select class="form-control" name="id_pegwai" id="inputGroupSelect01" name="username[]" >
+                                      <option selected>Masukan Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                    </select>
+                                    <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
+                                    <div class="input-group-addon ml-3"> 
+                                      <a href="javascript:void(0)" class="btn btn-success addMore"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                  </div>
                                 </div>
+                                
+                                <div class="form-group fieldGroupCopy" style="display: none;">
+                                  <div class="input-group mt-3">
+                                    <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username[]">
+                                      <option selected>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                    </select>
+                                    <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
 
-
-                              </div>
-                              <div class="col-md-5">
-
-
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Jumlah Barang</label>
-                                  <input type="number" class="form-control" id="recipient-name" />
+                                    <div class="input-group-addon"> 
+                                      <a href="javascript:void(0)" class="btn btn-danger remove"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-
-                              <div class="col-md-2">
-                                <label for="message-text" class="col-form-label">+/=</label>
-                                <a class="btn btn-primary" href="#">+</a>
                               </div>
                             </div>
 
-                            
-                            
-                            
-                            
                           </form>
+
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -211,8 +218,8 @@
 
 
 
-<!-- modal edit data -->
-<div class="modal fade" id="editData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <!-- modal edit data -->
+                  <div class="modal fade" id="editData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header bg-primary">
@@ -223,61 +230,71 @@
 
 
                             <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Pegwai</label>
-                                <select class="form-control" name="id_pegwai">
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                </select>
-                                </div>
+                              <label for="message-text" class="col-form-label">Nama Pegwai</label>
+                              <select class="form-control" name="id_pegwai">
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                                <option>Nama Pegawai</option>
+                              </select>
+                            </div>
 
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Unit Ker</label>
-                                <select class="form-control" name="id_pegwai">
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                </select>
-                                </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Nama Unit Ker</label>
+                              <select class="form-control" name="id_pegwai">
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                                <option>Nama Unit</option>
+                              </select>
+                            </div>
 
                             <div class="row">
-                              <div class="col-md-5">
+                              <div class="col-md-12">
 
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Nama Barang</label>
-                                  <select class="form-control" name="id_pegwai">
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                  <option>Nama Pegawai</option>
-                                </select>
+                                <label for="message-text" class="col-form-label">Nama Barang</label>
+                                <div class="form-group fieldGroup mb-3">
+                                  <div class="input-group">
+                                    <select class="form-control" name="id_pegwai" id="inputGroupSelect01" name="username[]" >
+                                      <option selected>Masukan Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                    </select>
+                                    <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
+                                    <div class="input-group-addon ml-3"> 
+                                      <a href="javascript:void(0)" class="btn btn-success addMore"><i class="fas fa-plus"></i></a>
+                                    </div>
+                                  </div>
                                 </div>
+                                
+                                <div class="form-group fieldGroupCopy" style="display: none;">
+                                  <div class="input-group mt-3">
+                                    <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username[]">
+                                      <option selected>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                      <option>Nama Barang</option>
+                                    </select>
+                                    <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
 
-
-                              </div>
-                              <div class="col-md-5">
-
-
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label">Jumlah Barang</label>
-                                  <input type="number" class="form-control" id="recipient-name" />
+                                    <div class="input-group-addon"> 
+                                      <a href="javascript:void(0)" class="btn btn-danger remove"><i class="fas fa-trash"></i></a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-
-                              <div class="col-md-2">
-                                <label for="message-text" class="col-form-label">+/=</label>
-                                <a class="btn btn-primary" href="#">+</a>
                               </div>
                             </div>
 
@@ -294,7 +311,7 @@
                       </div>
                     </div>
                   </div>
-<!-- modal edit data -->
+                  <!-- modal edit data -->
 
                   <!-- end modal -->
                   <!-- modal cetak data -->
@@ -332,40 +349,11 @@
                   <!-- end modal -->
                   <!-- akhir modal cetak data -->
                 </div>
-                <div class="col-md-6 d-flex ">
-                  <!-- date -->
-                  <div class="input-group justify-content-end mb-3">
-                    <div class="form-outline">
-                      <input  type="date" id="form1" class="form-control" />
-                    </div>
-                    <button class="btn btn-primary rounded border-0 ms-2">Cari Data</button>
-                  </div>
-                  <!-- date end -->
-                </div>
+
               </div>
 
-              
 
-
-
-
-
-
-
-
-              
-
-
-
-
-
-
-
-
-
-
-
-              <table class="table table-hover table-striped text-center table-bordered" id="tabel-data">
+              <table class="table table-hover table-striped text-center table-bordered" id="datatablesSimple">
 
 
 
@@ -592,12 +580,38 @@
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
-
+<!-- multiple insert -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script>
-  $(document).ready(function(){
-    $('#tabel-data').DataTable();
-  });
-</script>
+  $(document).ready(function () {
+        // membatasi jumlah inputan
+        var maxGroup = 10;
 
-</body>
-</html>
+        //melakukan proses multiple input
+        $(".addMore").click(function () {
+          if ($("body").find(".fieldGroup").length < maxGroup) {
+            var fieldHTML = '<div class="form-group fieldGroup">' + $(".fieldGroupCopy").html() + "</div>";
+            $("body").find(".fieldGroup:last").after(fieldHTML);
+          } else {
+            alert("Maximum " + maxGroup + " groups are allowed.");
+          }
+        });
+
+        //remove fields group
+        $("body").on("click", ".remove", function () {
+          $(this).parents(".fieldGroup").remove();
+        });
+      });
+    </script>
+    <!-- end multiple -->
+
+
+    <script>
+      $(document).ready(function(){
+        $('#tabel-data').DataTable();
+      });
+    </script>
+
+  </body>
+  </html>
