@@ -63,25 +63,15 @@
               <div class="sb-nav-link-icon"><i class="bi bi-box-seam"></i></div>
               Data Barang Keluar
             </a>
-            <a class="nav-link" href="datasupplier.html">
+            <a class="nav-link" href="pegawai.html">
               <div class="sb-nav-link-icon"><i class="bi bi-truck"></i></div>
-              Data Supplier
+              Data Pegawai
             </a>
             <a class="nav-link" href="user.html">
               <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
               Kelola Users
             </a>
-            <div class="sb-sidenav-menu-heading">Laporan</div>
-            <!-- laporan -->
-            <a class="nav-link" href="laporanbarangmasuk.html">
-              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-              Laporan Barang Masuk
-            </a>
-            <a class="nav-link" href="laporanbarangkeluar.html">
-              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-              Laporan Barang Keluar
-            </a>
-            <!-- end laporan -->
+            
           </div>
         </div>
         <div class="sb-sidenav-footer">
@@ -143,15 +133,15 @@
                               </div>
 
                               <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Nama Unit Ker</label>
+                                <label for="message-text" class="col-form-label">Supplier</label>
                                 <select class="form-control" name="id_pegwai">
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
-                                  <option>Nama Unit</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
                                 </select>
                               </div>
 
@@ -210,6 +200,103 @@
                     </div>
 
                     <!-- end modal -->
+
+
+
+                    <!-- Modal edit data -->
+
+
+                    <div class="modal fade" id="editData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header bg-primary">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Tambah Data</h5>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+
+
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Nama Pegwai</label>
+                                <select class="form-control" name="id_pegwai">
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                  <option>Nama Pegawai</option>
+                                </select>
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Supplier</label>
+                                <select class="form-control" name="id_pegwai">
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                  <option>Nama Supplier</option>
+                                </select>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-12">
+                                  
+                                  <label for="message-text" class="col-form-label">Nama Barang</label>
+                                  <div class="form-group fieldGroup mb-3">
+                                    <div class="input-group">
+                                      <select class="form-control" name="id_pegwai" id="inputGroupSelect01" name="username[]" >
+                                        <option selected>Masukan Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                      </select>
+                                      <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
+                                      <div class="input-group-addon ml-3"> 
+                                        <a href="javascript:void(0)" class="btn btn-success addMore"><i class="fas fa-plus"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group fieldGroupCopy" style="display: none;">
+                                    <div class="input-group mt-3">
+                                      <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username[]">
+                                        <option selected>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                        <option>Nama Barang</option>
+                                      </select>
+                                      <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
+                                      
+                                      <div class="input-group-addon"> 
+                                        <a href="javascript:void(0)" class="btn btn-danger remove"><i class="fas fa-trash"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </form>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Simpan Data</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- end modal edit data -->
                   </div>
                   
                   
@@ -238,8 +325,10 @@
                       <td>Makassar</td>
                       <td>5</td>
                       <td>20000</td>
-                      <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                      <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                        <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                        <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                      </td>
                       </tr>
                       <tr>
                         <td scope="row">2</td>
@@ -248,8 +337,10 @@
                         <td>Makassar</td>
                         <td>5</td>
                         <td>20000</td>
-                        <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                        <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                          <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                          <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                        </td>
                         </tr>
                         <tr>
                           <td scope="row">3</td>
@@ -258,8 +349,10 @@
                           <td>Makassar</td>
                           <td>5</td>
                           <td>20000</td>
-                          <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                          <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                            <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                            <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                          </td>
                           </tr>
                           <tr>
                             <td scope="row">3</td>
@@ -268,8 +361,10 @@
                             <td>Makassar</td>
                             <td>5</td>
                             <td>20000</td>
-                            <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                            <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                              <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                              <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                            </td>
                             </tr>
                             <tr>
                               <td scope="row">3</td>
@@ -278,8 +373,10 @@
                               <td>Makassar</td>
                               <td>5</td>
                               <td>20000</td>
-                              <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                              <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                              </td>
                               </tr>
                               <tr>
                                 <td scope="row">3</td>
@@ -288,9 +385,12 @@
                                 <td>Makassar</td>
                                 <td>5</td>
                                 <td>20000</td>
-                                <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                  <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                  <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                </td>
                                 </tr>
+
                                 <tr>
                                   <td scope="row">3</td>
                                   <td>123456</td>
@@ -298,8 +398,10 @@
                                   <td>Makassar</td>
                                   <td>5</td>
                                   <td>20000</td>
-                                  <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                  <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                    <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                    <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                  </td>
                                   </tr>
                                   <tr>
                                     <td scope="row">3</td>
@@ -308,8 +410,10 @@
                                     <td>Makassar</td>
                                     <td>5</td>
                                     <td>20000</td>
-                                    <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                    <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                      <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                      <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                    </td>
                                     </tr>
                                     <tr>
                                       <td scope="row">3</td>
@@ -318,8 +422,10 @@
                                       <td>Makassar</td>
                                       <td>5</td>
                                       <td>20000</td>
-                                      <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                      <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                        <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                        <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                      </td>
                                       </tr>
                                       <tr>
                                         <td scope="row">3</td>
@@ -328,8 +434,10 @@
                                         <td>Makassar</td>
                                         <td>5</td>
                                         <td>20000</td>
-                                        <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                        <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                          <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                          <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                        </td>
                                         </tr>
                                         <tr>
                                           <td scope="row">3</td>
@@ -338,8 +446,10 @@
                                           <td>Makassar</td>
                                           <td>5</td>
                                           <td>20000</td>
-                                          <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                          <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                            <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                            <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                          </td>
                                           </tr>
                                           <tr>
                                             <td scope="row">3</td>
@@ -348,8 +458,11 @@
                                             <td>Makassar</td>
                                             <td>5</td>
                                             <td>20000</td>
-                                            <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                            <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                              <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                              <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                            </td>
+                                            </td>
                                             </tr>
                                             <tr>
                                               <td scope="row">3</td>
@@ -358,8 +471,10 @@
                                               <td>Makassar</td>
                                               <td>5</td>
                                               <td>20000</td>
-                                              <td><button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-pencil-square mx-1"></i></a>Edit</button>
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a href="#" class="link-light"><i class="bi bi-trash-fill mx-1"></i></a>Hapus</button></td>
+                                              <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                                <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                                <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                              </td>
                                               </tr>
                                             </tbody>
                                           </table>
