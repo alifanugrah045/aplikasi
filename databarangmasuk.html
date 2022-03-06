@@ -7,6 +7,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Dashboard - SB Admin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <!-- icon -->
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
@@ -17,6 +19,7 @@
   
   <link href="css/styles.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  
 </head>
 <body class="sb-nav-fixed">
   <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -55,7 +58,7 @@
               Dashboard
             </a>
             <div class="sb-sidenav-menu-heading">Menu</div>
-            <a class="nav-link" href="databarangmasuk.php">
+            <a class="nav-link" href="databarangmasuk.html">
               <div class="sb-nav-link-icon"><i class="bi bi-reply"></i></div>
               Data Barang Masuk
             </a>
@@ -85,7 +88,7 @@
         <div class="container-fluid px-4">
           <h1 class="mt-4">Data Barang Masuk</h1>
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Dashboard</a></li>
             <li class="breadcrumb-item active">Data Barang Masuk</li>
           </ol>
           <div class="card shadow-sm">
@@ -99,8 +102,8 @@
                   <!-- modal -->
                   <!-- Button trigger modal -->
                   <div class="input-group mb-3">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</button>
-                    <button class="btn btn-success rounded border-0 ms-2">
+                    <button type="button" class="btn btn-primary rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</button>
+                    <button class="btn btn-success rounded border-0 ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                       <i class="bi bi-printer me-2">
                       </i>Cetak Data</button>
                     </div>
@@ -169,7 +172,7 @@
                                   
                                   <div class="form-group fieldGroupCopy" style="display: none;">
                                     <div class="input-group mt-3">
-                                      <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username[]">
+                                      <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username1[]">
                                         <option selected>Nama Barang</option>
                                         <option>Nama Barang</option>
                                         <option>Nama Barang</option>
@@ -178,7 +181,7 @@
                                         <option>Nama Barang</option>
                                         <option>Nama Barang</option>
                                       </select>
-                                      <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
+                                      <input type="number" name="email1[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
                                       
                                       <div class="input-group-addon"> 
                                         <a href="javascript:void(0)" class="btn btn-danger remove"><i class="fas fa-trash"></i></a>
@@ -187,6 +190,8 @@
                                   </div>
                                 </div>
                               </div>
+                              
+                            
                               
                             </form>
                             
@@ -199,7 +204,45 @@
                       </div>
                     </div>
 
+
+                    
+
                     <!-- end modal -->
+
+                     <!-- modal cetak data -->
+                  <!-- Modal -->
+
+
+
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header bg-success">
+                          <h5 class="modal-title text-white" id="exampleModalLabel">Cetak Data</h5>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">From</label>
+                              <input type="date" class="form-control" id="recipient-name" />
+                            </div>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">To</label>
+                              <input type="date" class="form-control" id="recipient-name" />
+                            </div>
+
+                            
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="cetak1.html" target="_blank" type="submit" class="btn btn-success">Cetak Semua Data</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end modal -->
+                  <!-- akhir modal cetak data -->
 
 
 
@@ -246,7 +289,7 @@
                                 <div class="col-md-12">
                                   
                                   <label for="message-text" class="col-form-label">Nama Barang</label>
-                                  <div class="form-group fieldGroup mb-3">
+                                  <div class="form-group-1 fieldGroup1 mb-3">
                                     <div class="input-group">
                                       <select class="form-control" name="id_pegwai" id="inputGroupSelect01" name="username[]" >
                                         <option selected>Masukan Nama Barang</option>
@@ -259,12 +302,12 @@
                                       </select>
                                       <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
                                       <div class="input-group-addon ml-3"> 
-                                        <a href="javascript:void(0)" class="btn btn-success addMore"><i class="fas fa-plus"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-success addMore1"><i class="fas fa-plus"></i></a>
                                       </div>
                                     </div>
                                   </div>
                                   
-                                  <div class="form-group fieldGroupCopy" style="display: none;">
+                                  <div class="form-group-1 fieldGroupCopy1" style="display: none;">
                                     <div class="input-group mt-3">
                                       <select class="form-control " name="id_pegwai" id="inputGroupSelect01" name="username[]">
                                         <option selected>Nama Barang</option>
@@ -278,7 +321,7 @@
                                       <input type="number" name="email[]" class="form-control" placeholder="Masukan Jumlah Barang"/>
                                       
                                       <div class="input-group-addon"> 
-                                        <a href="javascript:void(0)" class="btn btn-danger remove"><i class="fas fa-trash"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-danger remove1"><i class="fas fa-trash"></i></a>
                                       </div>
                                     </div>
                                   </div>
@@ -301,37 +344,25 @@
                   
                   
                 </div>
-                
-                <table class="table table-hover table-striped text-center table-bordered" id="datatablesSimple">
+                <div class="table-responsive text-center">
+                  <table class="table table-hover table-striped table-bordered text " id="datatablesSimple">
                  
                   
-                  <thead class="table-dark">
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col">ID Barang</th>
-                      <th scope="col">Tanggal</th>
-                      <th scope="col">Supplier</th>
-                      <th scope="col">Jumlah</th>
-                      <th scope="col">Harga Satuan</th>
-                      <th scope="col">Aksi</th>
-                    </tr>
-                  </thead>
-                  
-                  <tbody>
-                    <tr>
-                      <td scope="row">1</td>
-                      <td>12345</td>
-                      <td>17-2-2022</td>
-                      <td>Makassar</td>
-                      <td>5</td>
-                      <td>20000</td>
-                      <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
-                        <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
-                        <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
-                      </td>
-                      </tr>
+                    <thead class="table-dark">
                       <tr>
-                        <td scope="row">2</td>
+                        <th class="text-center" scope="col">No</th>
+                        <th class="text-center" scope="col">ID Barang</th>
+                        <th class="text-center" scope="col">Tanggal</th>
+                        <th class="text-center" scope="col">Supplier</th>
+                        <th class="text-center" scope="col">Jumlah</th>
+                        <th class="text-center" scope="col">Harga Satuan</th>
+                        <th class="text-center" scope="col">Aksi</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                      <tr>
+                        <td scope="row">1</td>
                         <td>12345</td>
                         <td>17-2-2022</td>
                         <td>Makassar</td>
@@ -343,8 +374,8 @@
                         </td>
                         </tr>
                         <tr>
-                          <td scope="row">3</td>
-                          <td>123456</td>
+                          <td scope="row">2</td>
+                          <td>12345</td>
                           <td>17-2-2022</td>
                           <td>Makassar</td>
                           <td>5</td>
@@ -390,7 +421,6 @@
                                   <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
                                 </td>
                                 </tr>
-
                                 <tr>
                                   <td scope="row">3</td>
                                   <td>123456</td>
@@ -403,6 +433,7 @@
                                     <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
                                   </td>
                                   </tr>
+  
                                   <tr>
                                     <td scope="row">3</td>
                                     <td>123456</td>
@@ -462,7 +493,6 @@
                                               <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
                                               <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
                                             </td>
-                                            </td>
                                             </tr>
                                             <tr>
                                               <td scope="row">3</td>
@@ -475,9 +505,26 @@
                                                 <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
                                                 <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
                                               </td>
+                                              </td>
                                               </tr>
-                                            </tbody>
-                                          </table>
+                                              <tr>
+                                                <td scope="row">3</td>
+                                                <td>123456</td>
+                                                <td>17-2-2022</td>
+                                                <td>Makassar</td>
+                                                <td>5</td>
+                                                <td>20000</td>
+                                                <td><a class="btn btn-primary link-light" data-bs-toggle="modal" data-bs-target="#editData"><i class="bi bi-pencil-square"></i>Edit</a>
+                                                  <a  class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash-fill "></i>Hapus</a>
+                                                  <a class="btn btn-info" target="_blank" href="cetak1.html"><i class="bi bi-printer"></i> Cetak</a>
+                                                </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+
+                </div>
+                
+               
                                         </div>
                                       </div>
                                     </div>
@@ -499,6 +546,7 @@
                               </footer>
                             </div>
                           </div>
+                          
                           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
                           <script src="js/scripts.js"></script>
                           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
@@ -509,34 +557,58 @@
 
                           <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
                           <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+                          <!-- multiple insert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script>
+      $(document).ready(function(){
+      // membatasi jumlah inputan
+      var maxGroup = 10;
+      
+      //melakukan proses multiple input 
+      $(".addMore").click(function(){
+          if($('body').find('.fieldGroup').length < maxGroup){
+              var fieldHTML = '<div class="form-group fieldGroup">'+$(".fieldGroupCopy").html()+'</div>';
+              $('body').find('.fieldGroup:last').after(fieldHTML);
+          }else{
+              alert('Maximum '+maxGroup+' groups are allowed.');
+          }
+      });
+      
+      //remove fields group
+      $("body").on("click",".remove",function(){ 
+          $(this).parents(".fieldGroup").remove();
+      });
+  });
+    </script>
+                  
+                  <!-- end multiple -->
+
+                  <script>
+                    $(document).ready(function(){
+                    // membatasi jumlah inputan
+                    var maxGroup = 10;
+                    
+                    //melakukan proses multiple input 
+                    $(".addMore1").click(function(){
+                        if($('body').find('.fieldGroup1').length < maxGroup){
+                            var fieldHTML = '<div class="form-group-1 fieldGroup1">'+$(".fieldGroupCopy1").html()+'</div>';
+                            $('body').find('.fieldGroup1:last').after(fieldHTML);
+                        }else{
+                            alert('Maximum '+maxGroup+' groups are allowed.');
+                        }
+                    });
+                    
+                    //remove fields group
+                    $("body").on("click",".remove1",function(){ 
+                        $(this).parents(".fieldGroup1").remove();
+                    });
+                });
+                  </script>
 
 
                           
-                          <!-- multiple insert -->
-                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-                          <script>
-                            $(document).ready(function () {
-    // membatasi jumlah inputan
-    var maxGroup = 10;
-
-    //melakukan proses multiple input
-    $(".addMore").click(function () {
-      if ($("body").find(".fieldGroup").length < maxGroup) {
-        var fieldHTML = '<div class="form-group fieldGroup">' + $(".fieldGroupCopy").html() + "</div>";
-        $("body").find(".fieldGroup:last").after(fieldHTML);
-      } else {
-        alert("Maximum " + maxGroup + " groups are allowed.");
-      }
-    });
-
-    //remove fields group
-    $("body").on("click", ".remove", function () {
-      $(this).parents(".fieldGroup").remove();
-    });
-  });
-</script>
-<!-- end multiple -->
+                
 
 </body>
 </html>
