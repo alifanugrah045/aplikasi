@@ -28,7 +28,7 @@
 
 </head>
 <body class="sb-nav-fixed">
-  <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+  <nav class="sb-topnav navbar navbar-expand navbar-dark " style="background: #335EF7;">
     <!-- Navbar Brand-->
     <a class="navbar-brand ps-3" href="index.html">Logo</a>
     <!-- Sidebar Toggle-->
@@ -55,7 +55,7 @@
   </nav>
   <div id="layoutSidenav">
     <div id="layoutSidenav_nav">
-      <nav class="sb-sidenav accordion sb-sidenav-dark bg-primary" id="sidenavAccordion">
+      <nav class="sb-sidenav accordion sb-sidenav-dark " style="background: #335EF7;" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
           <div class="nav">
             <div class="sb-sidenav-menu-heading">Core</div>
@@ -83,7 +83,7 @@
             
           </div>
         </div>
-        <div class="sb-sidenav-footer bg-primary">
+        <div class="sb-sidenav-footer " style="background: #335EF7;">
           <div class="small">Logged in as:</div>
           Admin
         </div>
@@ -342,12 +342,11 @@
 
               </div>
 
-
-              <table class="table table-hover table-striped text-center table-bordered" id="datatablesSimple">
-                <thead class="table-dark text-center">
+              <!-- table data -->
+              <table class="table table-hover table-striped text-center" id="datatablesSimple">
+                <thead class=" bg-primary text-center text-light">
                   <tr>
                     <th class="text-center" scope="col">No</th>
-                    <th class="text-center" scope="col">ID Barang</th>
                     <th class="text-center" scope="col">Tanggal</th>
                     <th class="text-center" scope="col">Unit Tujuan</th>
                     <th class="text-center" scope="col">Jumlah Barang</th>
@@ -360,7 +359,6 @@
 
                   <tr>
                     <td scope="row">1</td>
-                    <td>12345</td>
                     <td>17-2-2022</td>
                     <td>Unit Mandonga</td>
                     <td>5</td>
@@ -376,7 +374,6 @@
 
                   <tr>
                     <td scope="row">2</td>
-                    <td>12345</td>
                     <td>17-2-2022</td>
                     <td>Unit Mandonga</td>
                     <td>5</td>
@@ -389,7 +386,6 @@
                   </tr>
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -403,7 +399,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -417,7 +412,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -431,7 +425,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -445,7 +438,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -459,7 +451,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -473,7 +464,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -487,7 +477,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -501,7 +490,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -515,7 +503,6 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td>123465</td>
                     <td>17-2-2022</td>
                     <td>Unit Andounohu</td>
                     <td>5</td>
@@ -530,6 +517,7 @@
                   </tr>
                 </tbody>
               </table>
+              <!-- akhir table -->
             </div>
           </div>
         </div>
@@ -540,18 +528,7 @@
 
 
 
-  <footer class="py-4 bg-light mt-auto">
-    <div class="container-fluid px-4">
-      <div class="d-flex align-items-center justify-content-between small">
-        <div class="text-muted">Copyright &copy; Your Website 2021</div>
-        <div>
-          <a href="#">Privacy Policy</a>
-          &middot;
-          <a href="#">Terms &amp; Conditions</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
@@ -598,24 +575,24 @@
       
       //melakukan proses multiple input 
       $(".addMore1").click(function(){
-          if($('body').find('.fieldGroup1').length < maxGroup){
-              var fieldHTML = '<div class="form-group-1 fieldGroup1">'+$(".fieldGroupCopy1").html()+'</div>';
-              $('body').find('.fieldGroup1:last').after(fieldHTML);
-          }else{
-              alert('Maximum '+maxGroup+' groups are allowed.');
-          }
+        if($('body').find('.fieldGroup1').length < maxGroup){
+          var fieldHTML = '<div class="form-group-1 fieldGroup1">'+$(".fieldGroupCopy1").html()+'</div>';
+          $('body').find('.fieldGroup1:last').after(fieldHTML);
+        }else{
+          alert('Maximum '+maxGroup+' groups are allowed.');
+        }
       });
       
       //remove fields group
       $("body").on("click",".remove1",function(){ 
-          $(this).parents(".fieldGroup1").remove();
+        $(this).parents(".fieldGroup1").remove();
       });
-  });
-    </script>
-<!-- end edit data multiple -->
+    });
+  </script>
+  <!-- end edit data multiple -->
 
 
-   
+  
 
-  </body>
-  </html>
+</body>
+</html>
